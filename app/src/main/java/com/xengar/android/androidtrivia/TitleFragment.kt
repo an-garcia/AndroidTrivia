@@ -21,11 +21,11 @@ class TitleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val bindig: FragmentTitleBinding = DataBindingUtil.inflate(
+        val binding: FragmentTitleBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_title, container, false)
-        bindig.playButton.setOnClickListener(
+        binding.playButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
-        return bindig.root
+        return binding.root
     }
 
 
