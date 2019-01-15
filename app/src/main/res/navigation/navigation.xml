@@ -52,4 +52,9 @@
                 app:popUpTo="@+id/titleFragment"/>
     </fragment>
 
+    <fragment android:id="@+id/aboutFragment"
+              android:name="com.xengar.android.androidtrivia.AboutFragment"
+              tools:layout="@layout/fragment_about"
+              android:label="@string/title_about_trivia"/>
+
 </navigation>
