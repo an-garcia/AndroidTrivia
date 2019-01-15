@@ -11,4 +11,10 @@
             android:label="fragment_title"
             tools:layout="@layout/fragment_title"/>
 
+    <fragment
+            android:id="@+id/gameFragment"
+            android:name="com.xengar.android.androidtrivia.GameFragment"
+            android:label="GameFragment"
+            tools:layout="@layout/fragment_game"/>
+
 </navigation>
