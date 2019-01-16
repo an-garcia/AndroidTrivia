@@ -24,6 +24,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.xengar.android.androidtrivia.databinding.FragmentGameWonBinding
 
 
@@ -33,8 +34,10 @@ class GameWonFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_game_won, container, false)
-        binding.nextMatchButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_gameWonFragment_to_gameFragment))
+        binding.nextMatchButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(
+                GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+        }
 
         var args = GameWonFragmentArgs.fromBundle(arguments!!)
         Toast.makeText(context,
