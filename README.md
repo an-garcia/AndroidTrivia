@@ -20,6 +20,8 @@ References
 ---------------------
 - https://developer.android.com/jetpack/
 - https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012
+- https://developer.android.com/training/implementing-navigation/nav-drawer
+- https://developer.android.com/topic/libraries/architecture/navigation/navigation-ui
 
 
 
